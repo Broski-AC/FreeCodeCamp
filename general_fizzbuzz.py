@@ -38,39 +38,7 @@ for x in range(1, (maxvalue+1)):
     else:
         continue
 
-#All failed attempts to show progress!
 
-# for x in range(1, (maxvalue+1)):
-#     total = 0
-#     for k, v in fizzBuzz_dict.items():
-#         v = int(v)
-#         total = sum(1 for y in fizzBuzz_dict.values() if (v%x != 0))
-#         a = [k for k in fizzBuzz_dict.keys() if (v%x == 0)]
-#         if total > 0:
-#             print(x)
-#         else:
-#             print(a)
-
-# x = 1
-# while x < (maxvalue + 1):
-#     for k, v in fizzBuzz_dict.items():
-#         v = int(v)
-#         if all(v%x != 0):
-#             print(x)
-#         else:
-#             if (v%x) == 0:
-#                 print(k, end =' ')
-#             else:
-#                 continue
-#     x += 1
-# for k,v in fizzBuzz_dict.items():
-#     for x in range(1, (maxvalue+1)):
-#         v = int(v)
-#         if (x%v) == 0:
-#             print(k, end=' ')
-#             print('\n')
-#         else:
-#             print(x)
 
 
 
