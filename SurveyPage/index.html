@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>AB Survey Page</title>
     <link rel="stylesheet" href="style.css">
@@ -13,11 +14,55 @@
     </p>
 
     <form id="survey-form">
-        <input id="number" type="number" placeholder="##" min="1" max="20" required>
-        <!-- Personal information goes toward the bottom -->
-        <input id="name" type="text" placeholder="First and Last Name" required>
-        <input id="email" type="email" placeholder="userName@ABCorp.com" required>
-        <input type="submit">
+        <div>
+            <label id="number-label" for="number">How many products are you looking to use?</label>
+            <input id="number" type="number" placeholder="##" min="1" max="20" required>
+        </div>
+        <div>
+            <label id="dropdown-label" for="dropdown">Please select how much time you usually spend cleaning</label>
+            <select id="dropdown">
+                <option class="dropdown-tag" value="0-1hr">0-1 hour</option>
+                <option class="dropdown-tag" value="1-2hr">1-2 hours</option>
+                <option class="dropdown-tag" value="2+hrs">2 or more hours</option>
+            </select>
+        </div>
+        <div>
+            <h2>Please select your household's approximate size</h2>
+            <input type="radio" id="radio1" class="radiobtn" name="familySize" value="02people" checked>
+            <label class="radio1-label" for="radio1">0-2 people</label>
+            <input type="radio" id="radio2" class="radiobtn" name="familySize" value="36people">
+            <label class="radio1-label" for="radio2">3-6 people</label>
+            <input type="radio" id="radio3" class="radiobtn" name="familySize" value="7+people">
+            <label class="radio1-label" for="">7 or more people</label>
+        </div>
+        <div>
+            <h2>Please select the pets in your household</h2>
+            <input type="checkbox" id="cat" class="checkboxbtn" name="cat" value="cat">
+            <label class="checkbox1-label" for="cat">Cat</label>
+            <input type="checkbox" id="dog" class="checkboxbtn" name="dog" value="dog">
+            <label class="checkbox1-label" for="dog">Dog</label>
+            <input type="checkbox" id="rabbit" class="checkboxbtn" name="rabbit" value="rabbit">
+            <label class="checkbox1-label" for="rabbit">Rabbit</label>
+            <input type="checkbox" id="amphibian" class="checkboxbtn" name="amphibian" value="amphibian">
+            <label class="checkbox1-label" for="amphibian">Amphibian</label>
+            <input type="checkbox" id="reptile" class="checkboxbtn" name="reptile" value="reptile">
+            <label class="checkbox1-label" for="reptile">Reptile</label>
+            <input type="checkbox" id="other" class="checkboxbtn" name="other" value="other">
+            <label class="checkbox1-label" for="other">Other</label>
+        </div>
+        <div>
+            <textarea id="textarea">
+        Please let us know of any other details you feel may be pertinant towards recommending you the best cleaning products!
+        </textarea>
+        </div>
+        <div>
+            <label id="name-label" for="name">Please enter your First and Last Name</label>
+            <input id="name" type="text" placeholder="First and Last Name" required>
+            <label id="email-label" for="email">Please enter your Email</label>
+            <input id="email" type="email" placeholder="userName@ABCorp.com" required>
+            <button type="button" id="submit">Submit Form</button>
+        </div>
     </form>
 </body>
+
 </html>
