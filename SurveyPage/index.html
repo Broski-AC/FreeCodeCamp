@@ -9,7 +9,7 @@
 <body>
     <h1 id="title">AB Survey Page</h1>
     <p id="description"> Interested in learning more about AB Cleaning Products? Tell us a bit
-        about your cleaning habits, and we'll make sure that we match you with the right tool to cleaning
+        about your cleaning habits, and we'll make sure that we match you with the right tool for cleaning
         success!
     </p>
 
@@ -26,16 +26,19 @@
                 <option class="dropdown-tag" value="2+hrs">2 or more hours</option>
             </select>
         </div>
-        <div>
-            <h2>Please select your household's approximate size</h2>
+        <div id="radio-selections">
+            <h2>Please select your household's approximate size:</h2>
+            <label class="radio1-label" for="radio1">0-2 people
             <input type="radio" id="radio1" class="radiobtn" name="familySize" value="02people" checked>
-            <label class="radio1-label" for="radio1">0-2 people</label>
+            </label>
+            <label class="radio1-label" for="radio2">3-6 people
             <input type="radio" id="radio2" class="radiobtn" name="familySize" value="36people">
-            <label class="radio1-label" for="radio2">3-6 people</label>
+            </label>
+            <label class="radio1-label" for="">7 or more people
             <input type="radio" id="radio3" class="radiobtn" name="familySize" value="7+people">
-            <label class="radio1-label" for="">7 or more people</label>
+            </label>
         </div>
-        <div>
+        <div id="checkbox-selections">
             <h2>Please select the pets in your household</h2>
             <input type="checkbox" id="cat" class="checkboxbtn" name="cat" value="cat">
             <label class="checkbox1-label" for="cat">Cat</label>
